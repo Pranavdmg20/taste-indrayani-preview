@@ -141,3 +141,15 @@
 }
 .ti-preview .woocommerce-accordion { visibility:visible!important; }
 .ti-cart-link::before { content:"\f07a"; }
+/* Restore the original rice photograph in the homepage cooking section. */
+.ti-preview .elementor-320 .elementor-element.elementor-element-c1dbf5a {
+  background-image: url("site/366c0d71132404be.png") !important;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width:767px) {
+  .ti-preview .elementor-320 .elementor-element.elementor-element-c1dbf5a {
+    background-position: center center;
+  }
+}
