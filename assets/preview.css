@@ -1,0 +1,111 @@
+.ti-preview { --ti-red:#940c0e; --ti-ink:#2b201a; --ti-paper:#faf6ef; --ti-rule:#e2d7c8; color:var(--ti-ink); }
+.ti-preview :focus-visible { outline:3px solid #ae7410; outline-offset:4px; }
+.ti-preview .content { margin-top:0!important; min-height:320px; }
+.ti-preview .elementor-invisible { visibility:visible!important; }
+.ti-preview .wrapper { overflow:clip; }
+.ti-skip { position:absolute; top:6px; left:12px; z-index:99; color:#fff; background:var(--ti-red); padding:9px 14px; transform:translateY(-160%); }
+.ti-skip:focus { transform:none; }
+.ti-preview-bar { text-align:center; background:#f8ebd7; color:#4e331f; padding:5px 12px; font:600 12px/1.5 system-ui,sans-serif; }
+.ti-header { position:relative; background:var(--ti-red); color:white; }
+.ti-header-inner { width:min(calc(100% - 44px),1200px); min-height:88px; display:flex; align-items:center; gap:32px; margin:auto; }
+.ti-header a,.ti-header button { color:#fff; font:600 15px/1.35 system-ui,sans-serif; }
+.ti-header a:hover { color:#ffdc99; }
+.ti-header .ti-logo { display:flex; align-items:center; margin-right:auto; }
+.ti-logo img { display:block; width:155px; height:62px; object-fit:contain; }
+.ti-nav { display:flex; align-items:center; gap:clamp(16px,3vw,40px); }
+.ti-nav a { padding:8px 0; text-underline-offset:6px; }
+.ti-nav a[aria-current=page] { text-decoration:underline; }
+.ti-cart-link { display:inline-flex; align-items:center; gap:7px; padding:8px 0; white-space:nowrap; }
+.ti-cart-link span { background:#fff3e4; color:var(--ti-red); border-radius:50%; min-width:1.5em; height:1.5em; text-align:center; line-height:1.5; }
+.ti-menu { display:none; background:transparent; border:1px solid #f5c999; padding:8px 12px; cursor:pointer; }
+.ti-feedback { position:fixed; z-index:10; bottom:16px; right:16px; max-width:calc(100vw - 32px); background:#fffaf1; border:1px solid var(--ti-rule); color:var(--ti-ink); padding:12px 16px; box-shadow:0 3px 12px #25150a22; }
+.ti-wrap { box-sizing:border-box; width:min(calc(100% - 44px),1120px); margin-inline:auto; }
+.ti-field-panel { background:none!important; justify-content:center!important; min-width:0; }
+.ti-field-panel::before { content:none!important; }
+.ti-field-gallery { width:100%; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; padding:10px; box-sizing:border-box; }
+.ti-field-gallery img { display:block; aspect-ratio:3/2; width:100%; height:auto; object-fit:cover; }
+.ti-field-gallery img:first-child { grid-column:1 / -1; aspect-ratio:2.15; object-position:center 68%; }
+.ti-field-gallery img:nth-child(4) { grid-column:1 / -1; aspect-ratio:2.15; object-position:center 59%; }
+.ti-map-link { padding:6px 0 42px; text-align:center; }
+.ti-button { display:inline-flex; align-items:center; justify-content:center; background:var(--ti-red); color:white!important; padding:10px 18px; min-height:24px; font-weight:700; }
+.ti-button:hover { background:#6c0a0c; }
+.ti-recipe { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(24px,5vw,66px); align-items:center; background:var(--ti-paper); padding:clamp(18px,4vw,46px); margin:36px 0 60px; }
+.ti-cooking h2 { color:var(--ti-red); line-height:1.15; margin:0 0 14px; }
+.ti-cooking h3 { font-size:clamp(16px,2vw,20px); line-height:1.3; color:var(--ti-ink); }
+.ti-recipe p,.ti-recipe li { color:var(--ti-ink); font-size:16px; line-height:1.55; }
+.ti-recipe ol { margin:14px 0; padding-left:25px; list-style:decimal; }
+.ti-recipe li+li { margin-top:7px; }
+.ti-recipe img { display:block; height:auto; width:100%; }
+.ti-videos { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(16px,4vw,48px); padding-bottom:25px; }
+.ti-videos article { display:flex; flex-direction:column; gap:10px; }
+.ti-videos h3 { min-height:2.6em; margin:0; }
+.ti-videos video { display:block; width:100%; height:auto; aspect-ratio:9/16; background:#241b18; }
+.ti-product-panel { border-top:1px solid var(--ti-rule); padding:15px 0 20px; margin-top:8px; }
+.ti-product-panel summary { cursor:pointer; color:var(--ti-red); font-size:19px; font-weight:700; padding:3px 0 9px; }
+.ti-product-panel p { margin-block:8px; }
+.ti-product-panel ul { list-style:disc; padding-left:22px; }
+.ti-product-panel .commentlist { list-style:none; padding:0; margin:0; }
+.ti-preview #reviews #comments ol.commentlist li .comment-text { margin-left:0; padding:13px 16px; background:var(--ti-paper); }
+.ti-preview #reviews #comments ol.commentlist .star-rating { float:none; margin:0 0 4px; }
+.ti-review-note { padding:12px 16px; border:1px solid var(--ti-rule); }
+.ti-preview .summary .quantity input[type=button] { display:none; }
+.ti-preview .summary input.qty { appearance:auto; min-width:56px; color:var(--ti-ink); }
+.ti-preview [data-preview-add] { cursor:pointer; }
+.ti-preview .ti-demo-cart { padding-block:54px 72px; }
+.ti-demo-cart h1 { margin-bottom:22px; }
+.ti-demo-cart p { margin-block:12px; }
+.ti-demo-cart li { display:grid; grid-template-columns:minmax(0,1fr) auto auto; gap:12px; align-items:center; padding:14px 0; border-bottom:1px solid var(--ti-rule); }
+.ti-demo-cart li a { text-decoration:underline; }
+.ti-demo-cart input { width:55px; min-height:34px; padding-left:6px; }
+.ti-demo-cart button { background:#fff; border:1px solid var(--ti-rule); padding:8px; color:var(--ti-ink); cursor:pointer; }
+.ti-cart-total { font-size:18px; color:var(--ti-ink); }
+@media (max-width:720px) {
+  .ti-header-inner { width:calc(100% - 28px); gap:13px; min-height:70px; flex-wrap:wrap; }
+  .ti-logo img { width:116px; height:51px; }
+  .ti-menu { display:block; }
+  .ti-nav { display:none; order:4; width:100%; flex-direction:column; align-items:stretch; gap:0; padding-bottom:12px; }
+  .ti-nav.is-open { display:flex; }
+  .ti-nav a { padding:10px 0; }
+  .ti-field-gallery { padding:4px; }
+  .ti-recipe { grid-template-columns:1fr; margin-top:22px; margin-bottom:38px; }
+  .ti-videos { grid-template-columns:minmax(0,1fr); max-width:380px; margin-inline:auto; gap:28px; }
+  .ti-videos h3 { min-height:0; }
+  .ti-preview .summary .price { margin-bottom:9px; }
+}
+.ti-preview-bar { padding-inline:18px; font-size:13px; }
+.ti-cooking h2 { font-size:clamp(30px,4vw,48px); }
+.ti-preview .elementor-261 [data-id="4843deb7"] h1 { color:var(--ti-red)!important; font-size:clamp(34px,5vw,66px); line-height:1.12; padding-inline:18px; letter-spacing:-.025em; }
+.ti-cooking + .e-con { --padding-top:30px; --padding-bottom:42px; }
+.ti-cooking + .e-con .latest_post_two_holder .latest_post_two_text { min-height:0; }
+.ti-cooking + .e-con .latest_post_two_image img { width:100%; aspect-ratio:16/9; object-fit:cover; height:auto; }
+.ti-preview .woocommerce-product-gallery { opacity:1!important; }
+.ti-preview .ti-field-gallery + * { margin-top:0; }
+@media(max-width:720px) {
+  .ti-header-inner { width:calc(100% - 36px); }
+}
+.ti-field-gallery { scroll-margin-top:24px; }
+.ti-cooking #ti-video-title { scroll-margin-top:24px; }
+.ti-preview-bar { position:relative; z-index:3; }
+.ti-preview .right-img::after { content:none!important; }
+.ti-preview #farm-photos { position:relative; z-index:2; }
+.ti-preview [data-id="d1e6e7a"] .elementor-column { width:100%; }
+.ti-preview [data-id="a776d64"] iframe { display:block; border:0; width:100%; height:clamp(300px,36vw,460px); }
+.ti-map-link { padding:16px 0 8px; }
+.ti-existing-videos { padding-block:20px 48px; }
+.ti-existing-videos h2 { color:var(--ti-red); font-size:clamp(30px,4vw,48px); line-height:1.15; margin-bottom:14px; }
+.ti-youtube-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:18px; }
+.ti-youtube-media { background:#241b18; aspect-ratio:9/16; }
+.ti-youtube-media button, .ti-youtube-media iframe { width:100%; height:100%; display:block; border:0; padding:0; }
+.ti-youtube-media button { position:relative; cursor:pointer; background:#241b18; }
+.ti-youtube-media img { display:block; width:100%; height:100%; object-fit:cover; }
+.ti-youtube-media span { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); white-space:nowrap; background:var(--ti-red); color:#fff; font-weight:700; padding:9px 12px; }
+.ti-youtube-clip > a { display:inline-block; padding-block:8px; color:var(--ti-red); text-decoration:underline; text-underline-offset:3px; }
+.ti-existing-videos + .e-con { --padding-top:30px; --padding-bottom:42px; }
+.ti-existing-videos + .e-con .latest_post_two_image img { width:100%; aspect-ratio:16/9; object-fit:cover; height:auto; }
+.ti-demo-cart .ti-button[hidden] { display:none; }
+@media(max-width:860px) {
+  .ti-youtube-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+}
+@media(max-width:550px) {
+  .ti-youtube-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
