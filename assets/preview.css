@@ -22,21 +22,16 @@
 .ti-wrap { box-sizing:border-box; width:min(calc(100% - 44px),1120px); margin-inline:auto; }
 .ti-field-panel { background:none!important; justify-content:center!important; min-width:0; }
 .ti-field-panel::before { content:none!important; }
-.ti-field-gallery { width:100%; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; padding:10px; box-sizing:border-box; }
-.ti-field-gallery img { display:block; aspect-ratio:3/2; width:100%; height:auto; object-fit:cover; }
-.ti-field-gallery img:first-child { grid-column:1 / -1; aspect-ratio:2.15; object-position:center 68%; }
-.ti-field-gallery img:nth-child(4) { grid-column:1 / -1; aspect-ratio:2.15; object-position:center 59%; }
+.ti-field-gallery { width:100%; padding:10px; box-sizing:border-box; }
+.ti-field-gallery img { display:block; width:100%; height:auto; }
 .ti-map-link { padding:6px 0 42px; text-align:center; }
 .ti-button { display:inline-flex; align-items:center; justify-content:center; background:var(--ti-red); color:white!important; padding:10px 18px; min-height:24px; font-weight:700; }
 .ti-button:hover { background:#6c0a0c; }
-.ti-recipe { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(24px,5vw,66px); align-items:center; background:var(--ti-paper); padding:clamp(18px,4vw,46px); margin:36px 0 60px; }
+.ti-recipe { display:block; max-width:650px; margin:36px auto 42px; }
 .ti-cooking h2 { color:var(--ti-red); line-height:1.15; margin:0 0 14px; }
 .ti-cooking h3 { font-size:clamp(16px,2vw,20px); line-height:1.3; color:var(--ti-ink); }
-.ti-recipe p,.ti-recipe li { color:var(--ti-ink); font-size:16px; line-height:1.55; }
-.ti-recipe ol { margin:14px 0; padding-left:25px; list-style:decimal; }
-.ti-recipe li+li { margin-top:7px; }
 .ti-recipe img { display:block; height:auto; width:100%; }
-.ti-videos { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(16px,4vw,48px); padding-bottom:25px; }
+.ti-videos { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(16px,4vw,48px); margin-top:36px; padding-bottom:25px; }
 .ti-videos article { display:flex; flex-direction:column; gap:10px; }
 .ti-videos h3 { min-height:2.6em; margin:0; }
 .ti-videos video { display:block; width:100%; height:auto; aspect-ratio:9/16; background:#241b18; }
@@ -67,7 +62,7 @@
   .ti-nav.is-open { display:flex; }
   .ti-nav a { padding:10px 0; }
   .ti-field-gallery { padding:4px; }
-  .ti-recipe { grid-template-columns:1fr; margin-top:22px; margin-bottom:38px; }
+  .ti-recipe { margin-top:22px; margin-bottom:30px; }
   .ti-videos { grid-template-columns:minmax(0,1fr); max-width:380px; margin-inline:auto; gap:28px; }
   .ti-videos h3 { min-height:0; }
   .ti-preview .summary .price { margin-bottom:9px; }
@@ -84,7 +79,7 @@
   .ti-header-inner { width:calc(100% - 36px); }
 }
 .ti-field-gallery { scroll-margin-top:24px; }
-.ti-cooking #ti-video-title { scroll-margin-top:24px; }
+.ti-cooking #existing-videos-title { scroll-margin-top:24px; }
 .ti-preview-bar { position:relative; z-index:3; }
 .ti-preview .right-img::after { content:none!important; }
 .ti-preview #farm-photos { position:relative; z-index:2; }
