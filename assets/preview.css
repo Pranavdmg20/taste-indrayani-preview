@@ -109,3 +109,35 @@
 @media(max-width:550px) {
   .ti-youtube-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
+/* Match the existing Bridge header and product controls. */
+.ti-header-inner { min-height:120px; width:min(calc(100% - 44px),1200px); gap:34px; }
+.ti-logo img { width:220px; height:105px; }
+.ti-header a,.ti-header button { font-family:"Open Sans",sans-serif; }
+.ti-nav { gap:40px; }
+.ti-nav a { font-size:16px; font-weight:600; text-transform:uppercase; letter-spacing:2.2px; }
+.ti-nav a[aria-current=page] { text-decoration:none; }
+.ti-cart-link { font-size:0!important; position:relative; width:30px; height:36px; }
+.ti-cart-link::before { content:"\\f07a"; font-family:FontAwesome; font-size:16px; color:#382a14; }
+.ti-cart-link span { position:absolute; font:600 10px/1.5 "Open Sans",sans-serif; top:4px; right:0; background:#ff8130; color:#fff; }
+.ti-preview .summary .quantity input[type=button] { display:inline-block; }
+.ti-preview .summary input.qty { min-width:35px; }
+.ti-product-panel { border:0; padding:0; margin:0 0 5px; }
+.ti-product-panel summary { list-style:none; border:1px solid #47391e; text-align:center; padding:10px 14px; color:#47391e; font:400 18px/1.4 "Open Sans",sans-serif; }
+.ti-product-panel summary::-webkit-details-marker { display:none; }
+.ti-product-panel[open] > :not(summary) { margin:12px 0; }
+.ti-preview .elementor-261 [data-id="4843deb7"] h1 { color:#000!important; font-size:70px; line-height:1; letter-spacing:0; }
+.ti-cooking + .e-con { --padding-top:initial; --padding-bottom:initial; }
+@media(max-width:1000px) {
+ .ti-header-inner { min-height:100px; }
+ .ti-logo img { width:180px; height:80px; }
+ .ti-nav { gap:18px; }
+ .ti-nav a { font-size:13px; letter-spacing:1px; }
+}
+@media(max-width:720px) {
+ .ti-header-inner { width:calc(100% - 36px); min-height:70px; gap:13px; }
+ .ti-logo img { width:145px; height:64px; }
+ .ti-menu { font-size:14px!important; }
+ .ti-preview .elementor-261 [data-id="4843deb7"] h1 { font-size:44px; }
+}
+.ti-preview .woocommerce-accordion { visibility:visible!important; }
+.ti-cart-link::before { content:"\f07a"; }
