@@ -16,9 +16,17 @@ try {
 } catch { /* Leave the cart empty if storage is unavailable. */ }
 
 const menu = document.querySelector(".ti-menu");
-menu.addEventListener("click", () => {
-  const opened = document.querySelector(".ti-nav").classList.toggle("is-open");
+const navigation = document.querySelector(".ti-nav");
+function setMenuOpen(opened) {
+  navigation.classList.toggle("is-open", opened);
   menu.setAttribute("aria-expanded", String(opened));
+}
+menu.addEventListener("click", () => setMenuOpen(menu.getAttribute("aria-expanded") === "false"));
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && menu.getAttribute("aria-expanded") === "true") {
+    setMenuOpen(false);
+    menu.focus();
+  }
 });
 
 const cartItems = document.querySelector("#ti-cart-items");
