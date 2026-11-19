@@ -399,8 +399,15 @@
   .ti-preview .ti-shop-toolbar select { width:100%; }
   .ti-preview .home-banner [data-id="2d4565e"],
   .ti-preview .home-banner [data-id="b1b7f10"] { width:100%; align-items:center; }
-  .ti-preview .home-banner [data-id="9682d65"] .elementor-widget-container { text-align:center; }
-  .ti-preview .home-banner [data-id="9682d65"] img { margin-inline:auto; }
+  .ti-preview .home-banner [data-id="9682d65"] {
+    width:100%;
+    display:grid;
+    justify-items:center;
+  }
+  .ti-preview .home-banner [data-id="9682d65"] img {
+    display:block;
+    margin-inline:auto!important;
+  }
   .ti-preview .home-banner h1 { text-align:center; }
   .ti-preview .about-section .elementor-widget-text-editor { width:100%; text-align:start; }
   .ti-preview .about-section > .e-con-inner { width:var(--ti-frame); padding-inline:0; }
@@ -409,4 +416,34 @@
   .ti-preview [data-id="485d1bf"] { padding-top:32px; }
   .ti-preview [data-id="178e80d"] .elementor-widget-wrap { border-inline-width:0!important; }
   .ti-preview .ti-youtube-clip > a { display:flex; align-items:center; }
+  .ti-preview [data-id="f57939c"] > .e-con-inner {
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    row-gap:16px;
+    padding-block:28px 32px;
+  }
+  .ti-preview [data-id="f57939c"] [data-id="2310eac"] { display:contents; }
+  .ti-preview [data-id="f57939c"] .ti-field-panel {
+    order:1;
+    width:100%;
+  }
+  .ti-preview [data-id="f57939c"] [data-id="9d1debd"],
+  .ti-preview [data-id="f57939c"] [data-id="a281d91"],
+  .ti-preview [data-id="f57939c"] [data-id="f0e3521"] {
+    width:100%;
+    margin:0;
+    padding:0;
+    text-align:start;
+  }
+  .ti-preview [data-id="f57939c"] [data-id="a281d91"] {
+    order:2;
+    line-height:1.5;
+  }
+  .ti-preview [data-id="f57939c"] [data-id="f0e3521"] { order:3; }
+  .ti-preview [data-id="f57939c"] [data-id="f0e3521"] .elementor-button {
+    width:auto;
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
+  }
 }
